@@ -5,36 +5,53 @@ $nombre = "Mildred";
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <style>
-        body{
-            font-family: Arial;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87B2C4;
+            margin: 0;
+            padding: 40px 0;
+        }
+
+        .main-container {
+            max-width: 800px;
+            width: min(95%, 800px);
+            margin: 0 auto;
+            padding: 180px;
             text-align: center;
-            margin-top: 50px;
-            background-color: #f2f2f2;
         }
 
-        .reloj{
-            font-size: 50px;
+        .reloj {
+            font-size: 30px;
             color: #333;
+            margin: 0 auto;
+            display: inline-block;
         }
 
-        .mensaje{
+        .mensaje {
             font-size: 35px;
-            margin-top: 20px;
         }
     </style>
+
 </head>
+
 <body>
 
-    <h1>Hola <?= $nombre ?></h1>
+    <div class="main-container">
+        <h1>Hola <?= $nombre ?></h1>
+        <div class="reloj shadow p-2 mb-5 bg-body-tertiary rounded" id="reloj"></div>
 
-    <div class="reloj" id="reloj"></div>
-
-    <div class="mensaje" id="mensaje"></div>
+        <div class="mensaje" id="mensaje"></div>
+        <a href="segundo.php">
+            Ir a Página 2
+        </a>
+    </div>
 
     <script>
         function actualizarReloj() {
@@ -70,8 +87,7 @@ $nombre = "Mildred";
         actualizarReloj();
     </script>
 
- <a href="segundo.php">
-        Ir a Página 2
-    </a>
+
 </body>
+
 </html>
