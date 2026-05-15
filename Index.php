@@ -70,5 +70,8 @@ $nombre = "Mildred";
         actualizarReloj();
     </script>
 
+ <a href="segundo.php">
+        Ir a Página 2
+    </a>
 </body>
 </html>
