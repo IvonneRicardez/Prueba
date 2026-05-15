@@ -7,7 +7,7 @@ $nombre = "Mildred";
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Reloj en Tiempo Real</title>
+    <title>Index</title>
 
     <style>
         body{
